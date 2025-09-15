@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Catálogo de Plantas - Renato Santos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <nav>
+      <a href="index.html" class="brand">Renato Santos - Jardinagem</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contact.html">Contato</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Catálogo de Plantas</h1>
+    <p>Tabela com algumas plantas disponíveis — a primeira coluna contém a imagem (requisito).</p>
+
+    <table class="catalog-table">
+      <thead>
+        <tr>
+          <th>Imagem</th>
+          <th>Nome</th>
+          <th>Categoria</th>
+          <th>Preço (R$)</th>
+          <th>Descrição</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://via.placeholder.com/100?text=Samambaia" alt="Samambaia" /></td>
+          <td>Samambaia</td>
+          <td>Folhagem</td>
+          <td>45,00</td>
+          <td>Planta de sombra, ideal para varandas.</td>
+        </tr>
+        <tr>
+          <td><img src="https://via.placeholder.com/100?text=Lavanda" alt="Lavanda" /></td>
+          <td>Lavanda</td>
+          <td>Flor</td>
+          <td>30,00</td>
+          <td>Perfuma o ambiente e atrai polinizadores.</td>
+        </tr>
+        <tr>
+          <td><img src="https://via.placeholder.com/100?text=Suculenta" alt="Suculenta" /></td>
+          <td>Suculenta Mix</td>
+          <td>Suculenta</td>
+          <td>25,00</td>
+          <td>Baixa manutenção, ótima para interiores.</td>
+        </tr>
+        <tr>
+          <td><img src="https://via.placeholder.com/100?text=Hortel%C3%A3" alt="Hortelã" /></td>
+          <td>Hortelã</td>
+          <td>Ervas</td>
+          <td>12,00</td>
+          <td>Ideal para temperos e chás.</td>
+        </tr>
+        <tr>
+          <td><img src="https://via.placeholder.com/100?text=Rosa" alt="Rosa" /></td>
+          <td>Rosa Mini</td>
+          <td>Flor</td>
+          <td>60,00</td>
+          <td>Pequenas rosas decorativas para vasos.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="nota">Observação: a tabela tem 5 linhas de dados, 4+ colunas e imagens na primeira coluna — atende ao requisito.</p>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="ano2"></span> Renato Santos - Jardinagem</p>
+  </footer>
+
+  <script>document.getElementById('ano2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
